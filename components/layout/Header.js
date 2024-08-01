@@ -1,7 +1,7 @@
 import { Center, Flex } from '@chakra-ui/layout';
 import { Image } from "@chakra-ui/react"
 import { nanoid } from 'nanoid';
-import logo from "../../resources/images/kasam-house-logo-h.png"
+import logo from "../../resources/images/452881434_122095395572449423_5232585732091599160_n.jpg"
 import ContainerNavHeader from './ContainerNavHeader';
 import ContainerNavHeaderResponsive from './ContainerNavHeaderResponsive';
 
