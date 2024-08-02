@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Flex, Heading, Stack, Text } from '@chakra-ui/layout';
+import { Box, Flex, Heading, Stack, Text, Link } from '@chakra-ui/layout';
 import logo from '../../resources/images/woofurs-logo-v.png'
 import { Image } from '@chakra-ui/image';
 import Facebook from '@components/social_networks/Facebook';
@@ -98,18 +98,21 @@ function Footer() {
                 }
             </Stack>
             <Stack >
-                <Btn
-                    fSize={'18px'}
-                    letterSpacing={'1.2px'}
-                    title={'Join our Community'}
-                    borderTopEndRadius={'none'}
-                    change={true}
-                    colorHover={'#ed6436'}
-                    color={'white'}
-                    width={'200px'}
-                    gap={'20px'}
-                    fw={'700'}
-                />
+                <Link href="https://chat.whatsapp.com/BvC4FihB7Qv18m283rkoV6" target='_blank' style={{ textDecoration: 'none' }}>
+                    <Btn
+                        fSize={'18px'}
+                        letterSpacing={'1.2px'}
+                        title={'Join our Community'}
+                        borderTopEndRadius={'none'}
+                        change={true}
+                        colorHover={'#ed6436'}
+                        color={'white'}
+                        width={'200px'}
+                        gap={'20px'}
+                        fw={'700'}
+                        
+                    />
+                </Link>
                 <ContainerSocialNetworks data={socialNetworks} mtSize={'29px !important'} gap={'14px'} />
 
             </Stack>
