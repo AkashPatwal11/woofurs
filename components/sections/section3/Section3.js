@@ -48,7 +48,6 @@ function Section3() {
             direction={['column', 'column', 'column', 'row', 'row']}
             justifyContent="space-between"
             className="scroll-mt"
-            justifyContent={['center', 'center', 'center', 'space-between', 'space-between',]}
             alignItems={['center', 'center', 'center', 'flex-start', 'flex-start',]}
             pl={['0px', '0px', '0px', '78px', '78px']}
             textAlign={['center', 'center', 'center', 'left', 'left']}

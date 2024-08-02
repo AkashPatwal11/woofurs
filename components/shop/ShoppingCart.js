@@ -55,7 +55,7 @@ function ShoppingCart({ isOpen, handleClick, data, setData, oldStateData }) {
                             filteredItems.map((e, i) => <Flex key={nanoid()} justifyContent="space-between" alignItems="center" >
                                 <Flex gridGap="26px" alignItems="center" >
                                     <Flex position="relative">
-                                        <Image src={e.product.image} w="100px" h="100px" border="1px solid #0000001a" borderRadius="12px" />
+                                        <Image src={e.product.image} alt={e.product.image} w="100px" h="100px" border="1px solid #0000001a" borderRadius="12px" />
                                         {
                                             e.product.offer.available
                                                 ? <Onsale width={'30px'} height={'30px'} top={'-12px'} right={'-9px'} fontSize="11px" />

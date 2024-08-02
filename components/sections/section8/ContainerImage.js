@@ -21,6 +21,7 @@ function ContainerImage() {
                 <Box position="absolute" w="full" h="full" top="0" zIndex="2" >
                     <CloudLeftImgBorderNone
                         url={kasam.src}
+                        alt={kasam.src}
                         x={'500'}
                         y={'-40'}
                         sizeW={'100%'}

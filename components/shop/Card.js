@@ -39,7 +39,7 @@ function Card({ data, setData, oldStateData }) {
             _hover={{ boxShadow: "lg" }}
             textAlign="center"
         >
-            <Image src={data.image} w="full" h="270px" />
+            <Image src={data.image} w="full" h="270px" alt={data.image}/>
             <Flex direction="column" alignItems="center" >
                 <Text as="span" fontSize="12px" textTransform="uppercase" color={colorBase} fontWeight="700" mb="8px" >{data.categorie}</Text>
                 <Heading fontWeight="700" fontSize="24px" _hover={{ color: colorBase }} textTransform="capitalize" >{data.name}</Heading>
