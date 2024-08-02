@@ -9,7 +9,7 @@ import Btn from '@components/Btn'
 import ShoppingCart from '@components/shop/ShoppingCart';
 
 
-export default function shop() {
+export default function Shop() {
 
     const URL = '/api/pet_food'
 

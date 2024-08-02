@@ -33,10 +33,12 @@ function Footer() {
             {
                 id: nanoid(),
                 title: "Terms & Conditions",
+                url: "/terms"
             },
             {
                 id: nanoid(),
                 title: "Privacy Policy",
+                url: "/privacy"
             },
         ]
     }
@@ -78,7 +80,9 @@ function Footer() {
             paddingBlockEnd="26px"
         >
             <Stack position={"relative"} top={"-30"}>
-                <Image src={logo.src} w="196px" />
+                <Link href='/'>
+                    <Image src={logo.src} w="196px" />
+                </Link>
                 <Text as="strong" fontSize="inherit" fontWeight="inherit" >Copyright © 2024 Woofurs </Text> <br />
             </Stack>
             <Stack gridGap="2px" >
@@ -90,7 +94,7 @@ function Footer() {
             <Stack gridGap="2px" >
                 <Heading as="h3" color="#ed6436" fontSize="23px" >Quick Links</Heading>
                 {
-                    info.quickLinks.map(e => <Box key={e.id} >{e.title}</Box>)
+                    info.quickLinks.map(e => <Link target="_blank" key={e.id} href={e.url}>{e.title}</Link>)
                 }
             </Stack>
             <Stack >
