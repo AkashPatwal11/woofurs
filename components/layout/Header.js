@@ -1,7 +1,7 @@
 import { Center, Flex } from '@chakra-ui/layout';
 import { Image } from "@chakra-ui/react"
 import { nanoid } from 'nanoid';
-import logo from "../../resources/images/452881434_122095395572449423_5232585732091599160_n.jpg"
+import logo from "../../resources/images/woofurs-logo-v.png"
 import ContainerNavHeader from './ContainerNavHeader';
 import ContainerNavHeaderResponsive from './ContainerNavHeaderResponsive';
 
@@ -55,7 +55,7 @@ function Header() {
 			zIndex="24"
 		>
 			<Center>
-				<Image width="full" h="100px" src={logo.src} alt={'logo'} />
+				<Image width="full" h="76px" src={logo.src} alt={'logo'} />
 			</Center>
 			<ContainerNavHeaderResponsive data={nav} phoneNumber={phoneNumber} />
 			<ContainerNavHeader data={nav} phoneNumber={phoneNumber} />
