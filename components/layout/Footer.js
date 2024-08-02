@@ -1,11 +1,10 @@
 import React from 'react';
-import { Box, Flex, Heading, Stack } from '@chakra-ui/layout';
-import logo from '../../resources/images/kasam-house-logo-v.png'
+import { Box, Flex, Heading, Stack, Text } from '@chakra-ui/layout';
+import logo from '../../resources/images/woofurs-logo-v.png'
 import { Image } from '@chakra-ui/image';
 import Facebook from '@components/social_networks/Facebook';
 import Instagram from '@components/social_networks/Instagram';
-import Github from '@components/social_networks/Github';
-import Twitter from '@components/social_networks/Twitter';
+import Linkedin from '@components/social_networks/Linkedin';
 import ContainerSocialNetworks from '@components/social_networks/ContainerSocialNetworks';
 import { Input } from '@chakra-ui/input';
 import Btn from '@components/Btn';
@@ -18,16 +17,16 @@ function Footer() {
         about: [
             {
                 id: nanoid(),
-                title: "Salt Lake City, Utah(UT)",
+                title: "Bengaluru, India",
             },
             {
                 id: nanoid(),
-                title: "+1 435 237-2950",
+                title: "care@woofurs.com",
             },
             {
                 id: nanoid(),
-                title: "Mon - Sun: 8AM - 8PM"
-            },
+                title: "+91 9743127063",
+            }
 
         ],
         quickLinks: [
@@ -51,27 +50,21 @@ function Footer() {
             id: nanoid(),
             socialNetwork: 'Facebook',
             iconSvg: <Facebook />,
+            url: 'https://www.facebook.com/profile.php?id=61563482695848',
             pl: '6px'
         },
         {
             id: nanoid(),
             socialNetwork: 'Instagram',
             iconSvg: <Instagram />,
-            url: 'https://www.instagram.com/nc_cvargas',
+            url: 'https://www.instagram.com/bellyrub__club',
         },
         {
             id: nanoid(),
-            socialNetwork: 'Github',
-            iconSvg: <Github />,
-            url: 'https://github.com/Carlos-vargs',
-        },
-        {
-            id: nanoid(),
-            socialNetwork: 'Twitter',
-            iconSvg: <Twitter />,
-            url: 'https://twitter.com/nc_cvargas',
-            pt: "2px"
-        },
+            socialNetwork: 'Linkedin',
+            iconSvg: <Linkedin />,
+            url: 'https://www.linkedin.com/company/woofurs',
+        }
     ]
 
 
@@ -88,9 +81,9 @@ function Footer() {
             textAlign={['center', 'center', 'center', 'left', 'left']}
             paddingBlockEnd="26px"
         >
-            <Stack w="196px" >
-                <Image src={logo.src} />
-                <ContainerSocialNetworks data={socialNetworks} mtSize={'29px !important'} gap={'14px'} />
+            <Stack position={"relative"} top={"-30"}>
+                <Image src={logo.src} w="196px" />
+                <Text as="strong" fontSize="inherit" fontWeight="inherit" >Copyright © 2024 Woofurs </Text> <br />
             </Stack>
             <Stack gridGap="2px" >
                 <Heading as="h3" color="#ed6436" fontSize="23px" >About</Heading>
@@ -105,28 +98,19 @@ function Footer() {
                 }
             </Stack>
             <Stack >
-                <Heading as="h3" color="#ed6436" fontSize="23px" >Newsletter</Heading>
-                <Input
-                    placeholder="Your email"
-                    border="1px solid gray"
-                    borderRadius="full"
-                    w="full"
-                    type="email"
-                    autoComplete="email"
-                    _placeholder={{ textAlign: "center" }}
-                />
                 <Btn
-                    fSize={'12px'}
+                    fSize={'18px'}
                     letterSpacing={'1.2px'}
-                    title={'SUBSCRIBE'}
+                    title={'Join our Community'}
                     borderTopEndRadius={'none'}
                     change={true}
                     colorHover={'#ed6436'}
                     color={'white'}
-                    width={'full'}
-                    gap={'12px'}
+                    width={'200px'}
+                    gap={'20px'}
                     fw={'700'}
                 />
+                <ContainerSocialNetworks data={socialNetworks} mtSize={'29px !important'} gap={'14px'} />
 
             </Stack>
         </Flex>
