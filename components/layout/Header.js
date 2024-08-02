@@ -55,7 +55,7 @@ function Header() {
 			zIndex="24"
 		>
 			<Center>
-				<Image width="full" h="100px" src={logo.src} alt={'logo'} />
+				<Image width="full" h="160px" src={logo.src} alt={'logo'} />
 			</Center>
 			<ContainerNavHeaderResponsive data={nav} phoneNumber={phoneNumber} />
 			<ContainerNavHeader data={nav} phoneNumber={phoneNumber} />
