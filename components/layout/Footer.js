@@ -32,15 +32,11 @@ function Footer() {
         quickLinks: [
             {
                 id: nanoid(),
-                title: "Dog Boarding Services",
+                title: "Terms & Conditions",
             },
             {
                 id: nanoid(),
-                title: "Cat Boarding Services",
-            },
-            {
-                id: nanoid(),
-                title: "Spa and Grooming Services",
+                title: "Privacy Policy",
             },
         ]
     }
