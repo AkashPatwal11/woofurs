@@ -89,7 +89,6 @@ bring something that smells like home.`
                         userSelect="none"
                         display="flex"
                         w="auto"
-                        fontSize="17px"
                         alignItems="center"
 
                     >

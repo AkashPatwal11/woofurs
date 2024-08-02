@@ -28,7 +28,7 @@ function ReviewContainer() {
                     <QuoteRightIcon />
                 </Box>
                 We love bring Lexi to Kasams house! The
-                staff is always so friendly and it's so
+                staff is always so friendly and it&apos;s so
                 convenient for our busy schedules!
             </Flex>
             <Flex
