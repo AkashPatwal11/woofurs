@@ -10,22 +10,38 @@ import { nanoid } from 'nanoid';
 import Card from './Card';
 import bgImg from '../../../resources/images/checkInTime-bgImage.png';
 
-function Section7() {
+function Section9() {
 
     const data = [
         {
             id: nanoid(),
-            icon: <AlarmClockIcon />,
-            title: 'from 8 am to 10 pm',
-            description: `Timings are drop off after 8am and collection is before 
-10am on the morning of going home.`
+            icon: <BallIcon colorFill={'#7AC143'} />,
+            title: 'Innovation',
+            description: `Continuously improving our AI to better serve pets and their parents`
         },
         {
             id: nanoid(),
             icon: <BallIcon colorFill={'#7AC143'} />,
-            title: 'favourite toys',
-            description: `If your dog has separation anxiety we encourage you to
-bring something that smells like home.`
+            title: 'Compassion',
+            description: `Putting the well-being of pets at the heart of everything we do`
+        },
+        {
+            id: nanoid(),
+            icon: <BallIcon colorFill={'#7AC143'} />,
+            title: 'Accessibility',
+            description: `Making expert pet care available to all, anytime, anywhere`
+        },
+        {
+            id: nanoid(),
+            icon: <BallIcon colorFill={'#7AC143'} />,
+            title: 'Community',
+            description: `Fostering a supportive network of pet lovers`
+        },
+        {
+            id: nanoid(),
+            icon: <BallIcon colorFill={'#7AC143'} />,
+            title: 'Education',
+            description: `Empowering pet parents with knowledge and resources`
         },
     ]
 
@@ -43,7 +59,7 @@ bring something that smells like home.`
 
             <Box w="full" >
                 <Heading fontSize={['50px', '50px', '70px', '70px', '70px']} fontWeight="700" mt="60px" >
-                    Check-in <Text as="strong" fontSize="inherit" fontWeight="inherit" color="#ED6436">Time</Text>
+                    What Drives <Text as="strong" fontSize="inherit" fontWeight="inherit" color="#ED6436">Us</Text>
                 </Heading>
                 <Flex direction="column" pt="77px" gridGap="44px" >
 
@@ -64,39 +80,6 @@ bring something that smells like home.`
                         transform: "rotate(10deg)"
 
                     }} >
-                    <Flex
-                        w={['210px', '210px', '210px', '90%', '90%',]}
-                        h={['210px', '210px', '210px', '90%', '90%',]}
-
-                    >
-                        <BoneIcon
-                            url={bgImage.src}
-                            x={'-110'}
-                            y={'0'}
-                            sizeW={'200%'}
-                            sizeH={'100%'}
-                            id={'0e0c67fa-1602-4a9d-86ba-32fc73c12670'}
-                        />
-                    </Flex>
-                    <Text as="strong"
-                        color="white"
-                        fontSize="20px"
-                        top={['43%', '43%', '43%', '39%', '39%']}
-                        left="14%"
-                        transform="rotate(-6deg)"
-                        position="absolute"
-                        textTransform="uppercase"
-                        userSelect="none"
-                        display="flex"
-                        w="auto"
-                        alignItems="center"
-
-                    >
-                        <Flex color="white" justifyContent="center" w="26px" h="full" >
-                            <PhoneIcon solid={true} />
-                        </Flex>
-                        +91 9743127063
-                    </Text>
                 </Flex>
             </Box>
 
@@ -121,4 +104,4 @@ bring something that smells like home.`
     );
 }
 
-export default Section7;
+export default Section9;
