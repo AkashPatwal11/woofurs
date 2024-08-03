@@ -30,18 +30,19 @@ function Header() {
 			title: 'reviews',
 		},
 		{
-			id: nanoid(),
-			url: '/#pricing',
-			title: 'pricing',
+			//*id: nanoid(),
+			//*url: '/#pricing',
+			//*title: 'pricing',
 		},
 		{
-			id: nanoid(),
-			url: '/shop',
-			title: 'shop',
+			//*id: nanoid(),
+			//*url: '/shop',
+			//*title: 'shop',
+			
 		},
 	]
 
-	const phoneNumber = "+91 8979819387"
+	const phoneNumber = "+91 9743127063"
 
 	return (
 		<Flex
