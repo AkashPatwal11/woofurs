@@ -1,7 +1,8 @@
 import React from "react";
+import { Flex, Heading, Text, Link } from "@chakra-ui/layout";
+
 import Btn from "@components/Btn";
 import ContainerImages from "./ContainerImages";
-import { Flex, Heading, Text } from "@chakra-ui/layout";
 
 function Section2() {
   return (
@@ -42,10 +43,10 @@ function Section2() {
           </Heading>
         </Heading>
         <Text whiteSpace="pre-wrap" fontSize="18px" lineHeight="1.7">
-          Because we believe that pets are part of our family, and it's time to
+          Because we believe that pets are part of our family, and it&apos;s time to
           make their care easier, more enjoyable, and more rewarding for all.
         </Text>
-        <a
+        <Link
           href="https://chat.whatsapp.com/BvC4FihB7Qv18m283rkoV6"
           target="_blank"
           style={{ textDecoration: "none" }}
@@ -70,7 +71,7 @@ function Section2() {
               "flex-start",
             ]}
           />
-        </a>
+        </Link>
       </Flex>
     </Flex>
   );

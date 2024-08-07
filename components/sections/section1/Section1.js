@@ -1,5 +1,6 @@
-import { Box, Flex, Heading, Text } from '@chakra-ui/layout';
+import { Box, Flex, Heading, Text, Link } from '@chakra-ui/layout';
 import React from 'react';
+
 import CloudRightImage2 from '@components/clouds/CloudRightImage2'
 import BoneIcon from '@icons/BoneIcon';
 import bgImage from '../../../resources/images/image-background-h.jpg'
@@ -48,7 +49,7 @@ function Section1() {
 						</Text>
 					</Flex>
 				</Flex>
-				<a href="https://chat.whatsapp.com/BvC4FihB7Qv18m283rkoV6" target="_blank" style={{ textDecoration: 'none' }}>
+				<Link href="https://chat.whatsapp.com/BvC4FihB7Qv18m283rkoV6" target="_blank" >
 					<Flex
 						w="260px"
 						mt={['0px', '0px', '0px', '30px', '30px']}
@@ -88,7 +89,7 @@ function Section1() {
 							Join BellyRub Club
 						</Text>
 					</Flex>
-				</a>
+				</Link>
 				
 			</Box>
 
