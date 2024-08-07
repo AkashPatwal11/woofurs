@@ -9,12 +9,13 @@ function DogIcon() {
         >
             <defs>
                 <style>
-                    {".prefix__cls-1{fill:#7ac143}.prefix__cls-2{fill:#282828}"}
+                    {".prefix__cls-1{fill:#7ac143 !important}.prefix__cls-2{fill:#282828}"}
                 </style>
             </defs>
             <path
                 className="prefix__cls-1"
                 d="M88.51 27.91l4.84 25.39a2.88 2.88 0 01-2.83 3.42H87.1A2.88 2.88 0 0184.45 55L72.66 27.86a2.88 2.88 0 013.12-4l10.37 1.74a2.88 2.88 0 012.36 2.31zM11.54 29.19L6.7 54.58A2.88 2.88 0 009.54 58H13a2.88 2.88 0 002.64-1.73l11.75-27.12a2.88 2.88 0 00-3.12-4L13.9 26.89a2.88 2.88 0 00-2.36 2.3z"
+                fill="#7ac143"
             />
             <circle className="prefix__cls-2" cx={39.77} cy={48.52} r={5.16} />
             <circle className="prefix__cls-2" cx={60.41} cy={48.52} r={5.16} />
