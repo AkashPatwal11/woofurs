@@ -16,23 +16,23 @@ function Header() {
 		},
 		{
 			id: nanoid(),
-			url: '/#about',
-			title: 'about',
+			url: '/#why',
+			title: 'why',
 		},
 		{
 			id: nanoid(),
-			url: '/#services',
-			title: 'services',
+			url: '/#features',
+			title: 'features',
 		},
+		// {
+		// 	id: nanoid(),
+		// 	url: '/#reviews',
+		// 	title: 'reviews',
+		// },
 		{
 			id: nanoid(),
-			url: '/#reviews',
-			title: 'reviews',
-		},
-		{
-			//*id: nanoid(),
-			//*url: '/#pricing',
-			//*title: 'pricing',
+			url: '/#values',
+			title: 'values',
 		},
 		{
 			//*id: nanoid(),
