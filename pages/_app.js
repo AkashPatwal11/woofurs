@@ -1,3 +1,4 @@
+import {useState, useEffect} from 'react'
 import { ChakraProvider } from "@chakra-ui/react"
 import Layout from "@components/layout/Layout"
 import theme from "@components/Theme"
@@ -6,8 +7,14 @@ import '../styles/animations.css'
 import 'animate.css';
 
 function MyApp({ Component, pageProps }) {
+	const [hydrated,setHydrated] = useState(false)
 
-	return (
+	useEffect(()=>{
+	
+		setHydrated(true)
+	
+	})
+	return hydrated && (
 		<ChakraProvider theme={theme} >
 			<Layout>
 				<Component {...pageProps} />
