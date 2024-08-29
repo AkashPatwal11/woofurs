@@ -8,7 +8,7 @@ function ContainerNavHeader({ data, phoneNumber }) {
     return (
         <Center gridGap="44px" display={['none', 'none', 'none', 'flex', 'flex']} >
             {
-                data.map(e => <NavHeader key={e.id} data={e} />)
+                data.map(e => <NavHeader key={e.id+e} data={e} />)
             }
             <Btn
                 title={phoneNumber}

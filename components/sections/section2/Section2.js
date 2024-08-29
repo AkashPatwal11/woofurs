@@ -43,8 +43,7 @@ function Section2() {
           </Heading>
         </Heading>
         <Text whiteSpace="pre-wrap" fontSize="18px" lineHeight="1.7">
-          Because we believe that pets are part of our family, and it&apos;s time to
-          make their care easier, more enjoyable, and more rewarding for all.
+          We envision a future where pet care is effortless for businesses and transparent for pet parents, creating happier, healthier pet families.
         </Text>
         <Link
           href="https://chat.whatsapp.com/BvC4FihB7Qv18m283rkoV6"

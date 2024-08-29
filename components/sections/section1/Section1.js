@@ -39,7 +39,7 @@ function Section1() {
             fontWeight="inherit"
             color="#ED6436"
           >
-            Pet Care with AI
+            Pet Care with AI and Digital Identities
           </Text>
         </Heading>
         <Flex
@@ -61,7 +61,7 @@ function Section1() {
               }}
             >
 				<Flex direction="row"><Flex w="60px" mr="20px"><HouseDogIcon/></Flex>
-			  Because your furry family deserves the best</Flex>
+			  Because your furry friend deserves the best</Flex>
               
             </Text>
             <Link
