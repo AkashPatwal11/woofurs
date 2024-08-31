@@ -1,4 +1,4 @@
-const data = [
+export const data = [
     {
         id: 'biEUg0_mCA',
         name: "air dried beef",
@@ -181,4 +181,54 @@ const data = [
     },
 ]
 
-export default data
+export const petData = [
+    {
+        name: 'Ferro',
+        species: 'Dog',
+        breed: 'Labrador Retriever',
+        location: 'Bangalore, Karnataka',
+        age: '9 years',
+        healthStatus: ['Vaccinated', 'Neutered', 'Healthy'],
+        imageUrl: 'https://makemyai.s3.ap-south-1.amazonaws.com/woofurs/ferro.jpeg',
+        timeActive: 'Since 2021',
+        owner: 'Piyush/Srishti',
+        badge: 'Vaccination Complete',
+      },
+      {
+        name: 'Muffin',
+        species: 'Dog',
+        breed: 'Indian Pariah',
+        location: 'Bangalore, Karnataka',
+        age: '3 years',
+        healthStatus: ['Vaccinated', 'Neutered', 'Healthy'],
+        imageUrl: 'https://makemyai.s3.ap-south-1.amazonaws.com/woofurs/muffin.jpeg',
+        timeActive: 'Since 2021',
+        owner: 'John Doe',
+        badge: 'Vaccination Complete',
+      },
+      {
+        name: 'Chkki',
+        species: 'Dog',
+        breed: 'Indian Spitz',
+        location: 'Bangalore, Karnataka',
+        age: '3 years',
+        healthStatus: ['Vaccinated', 'Neutered', 'Healthy'],
+        imageUrl: '/path-to-buddy-image.jpg',
+        timeActive: 'Since 2021',
+        owner: 'John Doe',
+        badge: 'Vaccination Complete',
+      },
+      {
+        name: 'Whiskers',
+        species: 'Cat',
+        breed: 'Siamese',
+        location: 'Pune, Maharashtra',
+        age: '2 years',
+        healthStatus: ['Vaccinated', 'Spayed', 'Healthy'],
+        imageUrl: '/path-to-whiskers-image.jpg',
+        timeActive: 'Since 2022',
+        owner: 'Jane Doe',
+        badge: 'Health Checkup Due',
+      },
+      // Add more pets
+    ];
