@@ -1,6 +1,8 @@
-// import { FaMapMarkerAlt } from 'react-icons/fa';
+import { FaMapMarkerAlt } from 'react-icons/fa';
 import { GiSittingDog, GiCat } from 'react-icons/gi';
+import { MdFamilyRestroom } from 'react-icons/md';
 import { Flex, Text } from "@chakra-ui/layout";
+import {dummyPetUrl} from 'lib/constants'
 
 const ListingCard = ({ profile }) => {
   const speciesIcon = profile.species === 'Dog' ? <GiSittingDog /> : <GiCat />;
@@ -10,7 +12,8 @@ const ListingCard = ({ profile }) => {
       borderRadius="3xl"
       bgColor="#F2F2F4"
       px="40px"
-      maxW="320px"
+      // maxW="320px"
+      width="320px"
       py="50px"
       direction="column"
       gridGap="40px"
@@ -20,7 +23,7 @@ const ListingCard = ({ profile }) => {
       <div className="flex items-center mb-4">
         <img
           className="w-20 h-20 rounded-full border-4 border-orange-500 mr-4"
-          src={profile.imageUrl}
+          src={profile.imageUrl || dummyPetUrl}
           alt={profile.name}
         />
         <div>
@@ -30,7 +33,7 @@ const ListingCard = ({ profile }) => {
             <span className="ml-2">{profile.breed}</span>
           </p>
           <p className="flex items-center text-sm text-gray-500">
-            {/* <FaMapMarkerAlt className="mr-1" />  */}
+            <FaMapMarkerAlt className="mr-1" /> 
             {profile.location}
           </p>
         </div>
@@ -39,7 +42,10 @@ const ListingCard = ({ profile }) => {
         <div>
           <p className="text-lg font-semibold">{profile.age}</p>
           {/* <p className="text-sm text-gray-400">{profile.timeActive}</p> */}
-          <p className="text-sm">Owner: {profile.owner}</p>
+          <p className="flex items-center text-sm">
+            <MdFamilyRestroom />
+            <span className="ml-2">{profile.owner}</span>
+          </p>
         </div>
         <Flex className="text-center" ml="20">
           <span className="bg-orange-500 text-white w-20 h-20 flex items-center justify-center rounded-full text-xs font-semibold shadow-md">

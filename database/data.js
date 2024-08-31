@@ -1,4 +1,4 @@
-export default data = [
+const data = [
     {
         id: 'biEUg0_mCA',
         name: "air dried beef",
@@ -279,3 +279,5 @@ export const petData = [
         badge: 'Health Checkup Due',
       },
     ];
+
+    export default data;
