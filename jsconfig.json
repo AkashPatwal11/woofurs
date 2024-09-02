@@ -12,8 +12,11 @@
             "@components/*": [
                 "components/*"
             ],
-            "@database": [
-                "database/db"
+            "@database/*": [
+                "database/*"
+            ],
+            "@lib/*": [
+                "lib/*"
             ],
         }
     },

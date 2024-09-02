@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
 	
 		setHydrated(true)
 	
-	})
+	}, [])
 	return hydrated && (
 		<ChakraProvider theme={theme} >
 			<Layout>

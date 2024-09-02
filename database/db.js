@@ -1,4 +1,4 @@
-import allData from './data'
+import data from './data'
 
 class Database {
     constructor() { }
@@ -6,7 +6,7 @@ class Database {
     getAll() {
         return new Promise(async (resolve, reject) => {
             try {
-                const asArray = Object.values(allData)
+                const asArray = Object.values(data)
                 await randomDelay()
                 resolve(asArray)
             } catch (error) {

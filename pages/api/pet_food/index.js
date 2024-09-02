@@ -1,4 +1,4 @@
-import DB from '@database'
+import DB from '@database/db'
 
 async function allPetFood(request, response) {
 
