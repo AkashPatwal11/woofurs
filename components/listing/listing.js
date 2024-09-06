@@ -1,6 +1,6 @@
 import { petData } from '@database/data';
 import ListingCard from '@components/listing/card';
-import { Flex, Box, Heading, Container } from "@chakra-ui/layout";
+import { Flex, Heading, Container } from "@chakra-ui/layout";
 // import { getAllPet } from "@lib/actions/pet.action";
 
 const cardsPerRow = 4; // Change this value to display the desired number of cards per row
@@ -41,7 +41,7 @@ function Listing() {
           {cardGroups.map((group, index) => (
             <Flex key={index} justifyContent="space-between" w="100%" flexWrap={'wrap'}>
               {group.map((profile, index) => (
-                <ListingCard key={index} profile={profile} />
+                <ListingCard profile={profile} />
               ))}
             </Flex>
           ))}
