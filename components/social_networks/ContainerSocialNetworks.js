@@ -1,5 +1,6 @@
 import { Flex, Link, Box } from '@chakra-ui/layout';
 import React, { Fragment } from 'react';
+import { Image } from '@chakra-ui/image';
 
 export default function ContainerSocialNetworks({ data, mtSize, gap, revert }) {
 

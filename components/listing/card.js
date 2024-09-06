@@ -2,9 +2,12 @@ import { FaMapMarkerAlt } from 'react-icons/fa';
 import { GiSittingDog, GiCat } from 'react-icons/gi';
 import { MdFamilyRestroom } from 'react-icons/md';
 import { Flex, Text } from "@chakra-ui/layout";
-import {dummyPetUrl} from 'lib/constants'
+import {dummyPetUrl} from 'lib/constants';
+import { useRouter } from "next/navigation";
+import {calculateAge} from 'lib/utils'
 
 const ListingCard = ({ profile }) => {
+  const router = useRouter();
   const speciesIcon = profile.species === 'Dog' ? <GiSittingDog /> : <GiCat />;
 
   return (
@@ -12,13 +15,14 @@ const ListingCard = ({ profile }) => {
       borderRadius="3xl"
       bgColor="#F2F2F4"
       px="40px"
-      // maxW="320px"
+      cursor="pointer"
       width="320px"
       py="50px"
       direction="column"
       gridGap="40px"
       alignItems={["center", "center", "center", "center", "flex-start"]}
       textAlign={["center", "center", "center", "center", "left"]}
+      onClick={() => router.push(`/pets/${profile.id}`)}
     >
       <div className="flex items-center mb-4">
         <img
@@ -40,8 +44,7 @@ const ListingCard = ({ profile }) => {
       </div>
       <div className="flex justify-between items-center">
         <div>
-          <p className="text-lg font-semibold">{profile.age}</p>
-          {/* <p className="text-sm text-gray-400">{profile.timeActive}</p> */}
+          <p className="text-lg font-semibold">{`${calculateAge(profile.dateOfBirth)} years`}</p>
           <p className="flex items-center text-sm">
             <MdFamilyRestroom />
             <span className="ml-2">{profile.owner}</span>
