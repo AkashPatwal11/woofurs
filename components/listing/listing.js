@@ -41,7 +41,7 @@ function Listing() {
           {cardGroups.map((group, index) => (
             <Flex key={index} justifyContent="space-between" w="100%" flexWrap={'wrap'}>
               {group.map((profile, index) => (
-                <ListingCard profile={profile} />
+                <ListingCard key={index} profile={profile} />
               ))}
             </Flex>
           ))}
