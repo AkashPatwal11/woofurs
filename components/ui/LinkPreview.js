@@ -2,26 +2,18 @@ import React from 'react';
 import Helmet from 'react-helmet';
 // import OGImageLoader from 'og-image-loader';
 
-export const LinkPreview = ({ pet, age }) => {
-  const [thumbnailUrl, setThumbnailUrl] = React.useState(null);
-
-  // Load the thumbnail URL using OGImageLoader
-  // React.useEffect(() => {
-  //   if (pet && pet.image) {
-  //     OGImageLoader({ url: pet.image, width: 1200 }).then((url) => {
-  //       setThumbnailUrl(url);
-  //     });
-  //   }
-  // }, [pet]);
+export const LinkPreview = ({ title, description, imageUrl }) => {
 
   return (
     <>
       <Helmet>
         {/* Specify the Open Graph meta tags */}
-        {pet.imageUrl && (
-          <meta property="og:image" content={pet.imageUrl} />
+        {imageUrl && (
+          <meta property="og:image" content={imageUrl} />
         )}
-        <title>{`${pet.name} | ${pet.location} | ${pet.breed} | Woofurs`}</title>
+        <title>{title}</title>
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
       </Helmet>
     </>
   );

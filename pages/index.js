@@ -8,6 +8,8 @@ import Section6 from "@components/sections/section6/Section6";
 import Section7 from "@components/sections/section7/Section7";
 import Section8 from "@components/sections/section8/Section8";
 import Section9 from "@components/sections/section9/Section9";
+import { LinkPreview } from "@components/ui/LinkPreview";
+import logo from '../resources/images/woofurs-logo-v.svg';
 
 export default function Home() {
 	return (
@@ -22,6 +24,7 @@ export default function Home() {
 			{/* <Section7 /> */}
 			{/* <Section8 /> */}
 			<Section9 />
+			<LinkPreview title={'Woofurs | Simplifying Pet Care'} imageUrl={logo} description={'Simplifying Pet Care'} />
 		</Fragment>
 	);
 }
