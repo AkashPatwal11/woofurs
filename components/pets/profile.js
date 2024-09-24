@@ -47,7 +47,8 @@ export const PetProfile = ({ pet }) => {
             <Image
               src={pet.imageUrl}
               alt={`${pet.name}'s photo`}
-              width="300px"
+              width="250px"
+              height="350px"
               mr={4}
               borderRadius={"100px"}
             />
@@ -103,7 +104,7 @@ export const PetProfile = ({ pet }) => {
           </Flex>
         </Box>
       </motion.div>
-      <LinkPreview pet={pet} age={petAge}/>
+      <LinkPreview description={pet.bio} imageUrl={pet.imageUrl} title={`${pet.name} | ${pet.location} | ${pet.breed} | Woofurs - Profile`}/>
     </Flex>
   );
 };

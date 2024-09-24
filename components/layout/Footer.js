@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Flex, Heading, Stack, Text, Link } from '@chakra-ui/layout';
-import logo from '../../resources/images/woofurs-logo-v.png'
+import logo from '../../resources/images/woofurs-logo-v.svg'
 import { Image } from '@chakra-ui/image';
 import Facebook from '@components/social_networks/Facebook';
 import Instagram from '@components/social_networks/Instagram';
