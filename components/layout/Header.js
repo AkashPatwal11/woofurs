@@ -4,6 +4,7 @@ import { nanoid } from 'nanoid';
 import logo from "../../resources/images/woofurs-logo-v.svg"
 import ContainerNavHeader from './ContainerNavHeader';
 import ContainerNavHeaderResponsive from './ContainerNavHeaderResponsive';
+import Link from 'next/link';
 
 
 function Header() {
@@ -24,11 +25,11 @@ function Header() {
 			url: '/#features',
 			title: 'features',
 		},
-		// {
-		// 	id: nanoid(),
-		// 	url: '/#reviews',
-		// 	title: 'reviews',
-		// },
+		{
+			id: nanoid(),
+			url: '/#business',
+			title: 'For Businesses',
+		},
 		{
 			id: nanoid(),
 			url: '/#values',
@@ -56,7 +57,10 @@ function Header() {
 			zIndex="24"
 		>
 			<Center>
-				<Image width="full" src={logo.src} alt={'logo'} />
+				<Link href="/">
+					<Image width="full" src={logo.src} alt={'woofurs logo'} title='Simplifying Pet Care with AI for Pet Owners and Businesses'/>
+				</Link>
+				
 			</Center>
 			<ContainerNavHeaderResponsive data={nav} phoneNumber={phoneNumber} />
 			<ContainerNavHeader data={nav} phoneNumber={phoneNumber} />

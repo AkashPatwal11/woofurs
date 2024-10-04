@@ -39,7 +39,7 @@ function Section1() {
             fontWeight="inherit"
             color="#ED6436"
           >
-            Pet Care with AI and Digital Identities
+            Pet Care with AI for Pet Owners and Businesses
           </Text>
         </Heading>
         <Flex
@@ -65,8 +65,8 @@ function Section1() {
               
             </Text>
             <Link
-              href="https://chat.whatsapp.com/BvC4FihB7Qv18m283rkoV6"
-              target="_blank"
+              href="#business"
+              // target="_blank"
             >
               <Flex
                 w="260px"
@@ -98,13 +98,13 @@ function Section1() {
                   color="white"
                   fontSize="20px"
                   top={["40%", "40%", "40%", "39%", "39%"]}
-                  left="10%"
+                  left="20%"
                   transform="rotate(-5.8deg)"
                   position="absolute"
                   textTransform="uppercase"
                   userSelect="none"
                 >
-                  Join BellyRub Club
+                  For Businesses
                 </Text>
               </Flex>
             </Link>

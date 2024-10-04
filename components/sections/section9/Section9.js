@@ -50,7 +50,7 @@ function Section9() {
             flexDirection={['column', 'column', 'column', 'row', 'row']}
             mb="100px"
         >
-
+            <ContainerImage />
             <Box w="full" >
                 <Heading fontSize={['50px', '50px', '70px', '70px', '70px']} fontWeight="700" mt="40px" >
                     Our Values <br/><Text as="strong" fontSize="inherit" fontWeight="inherit" color="#ED6436"> CARE</Text>
@@ -77,7 +77,7 @@ function Section9() {
                 </Flex>
             </Box>
 
-            <ContainerImage />
+            
 
         </Flex>
     );
