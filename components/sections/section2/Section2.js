@@ -43,7 +43,7 @@ function Section2() {
           </Heading>
         </Heading>
         <Text whiteSpace="pre-wrap" fontSize="18px" lineHeight="1.7">
-          We envision a future where pet care is effortless for businesses and transparent for pet parents, creating happier, healthier pet families.
+          We envision a future where pet care is effortless for businesses, transparent for pet parents, and better for every animal, creating happier, healthier pet families.
         </Text>
         <Link
           href="https://chat.whatsapp.com/BvC4FihB7Qv18m283rkoV6"
